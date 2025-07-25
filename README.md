@@ -26,13 +26,13 @@ A scalable real-time chat system built with NestJS, Socket.IO, and MongoDB.
 ## 🛠️ Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/nestjs-multi-room-chat.git
+git clone https://github.com/mahmoud-backend-dev/chat-app-events
 cd nestjs-multi-room-chat
 npm install
 npm run start:dev
 ```
 
-MongoDB must be running locally at: `mongodb://localhost/nest-chat`
+MongoDB must be running locally at: `mongodb://127.0.0.1:27017/chatDB`
 
 ## 🧪 Usage
 
@@ -41,8 +41,8 @@ Use any Socket.IO client to connect:
 ```js
 const socket = io('http://localhost:3000', {
   auth: {
-    token: 'dummy-jwt'
-  }
+    token: 'dummy-jwt',
+  },
 });
 ```
 
